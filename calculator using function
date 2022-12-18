@@ -1,0 +1,66 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ void Add(int,int);
+    void sub(int,int);
+    void mult(int,int);
+    void div(int,int);
+    char ch;
+    int a,b;
+    printf("enter the command which you want to perform \n");
+    scanf("%c",&ch);
+    printf("enter two number \n ");
+     scanf("%d%d",&a,&b);
+    switch (ch)
+    {
+    case '+': 
+    Add (a,b);
+        break;
+
+    case '-': 
+    sub (a,b);
+        break;
+    
+    case '*': 
+    mult (a,b);
+        break;
+
+    case '/': 
+    div (a,b);
+        break;
+
+    
+    default:
+    printf("invalid entery \n");
+        break;
+    }
+getch();
+}
+
+void Add(int a,int b)
+{
+    int Result;
+    Result=a+b;
+    printf("%d",Result);
+}
+
+void sub(int a,int b)
+{
+    int Result;
+    Result=a-b;
+    printf("%d",Result);
+}
+
+void mult (int a,int b)
+{
+    int Result;
+    Result=a*b;
+    printf("%d",Result);
+}
+void div(int a,int b)
+{
+    int Result;
+    Result=a/b;
+    printf("%d",Result);
+}
