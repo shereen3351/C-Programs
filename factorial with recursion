@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int factorial(int);
+int N,Result;
+printf("enter the value of N\n");
+scanf("%d",&N);
+Result=factorial(N);
+printf("%d",Result);
+getch();
+}
+int factorial(int k)
+{
+    if(k==0)
+    return 1;
+    else
+    return (k*factorial(k-1));
+}
