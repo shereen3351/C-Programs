@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{ 
+    int fabonic(int);
+    int N,i;
+    printf("enter the value of N \n");
+    scanf("%d",&N);
+    for(i=0;i<=N;i++)
+    {
+        printf("%d",fabonic(i));
+    }
+
+    getch();
+}
+int fabonic(int k)
+{
+    int t1=0,t2=1,nterm;
+    if(k==0)
+    {
+        return 0;
+    }
+    else if(k==1)
+    {
+        return 1;
+    }
+    else
+    {
+      return fabonic(k-1)+ fabonic(k-2);
+    }
+}
