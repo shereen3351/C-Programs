@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int Add(int);
+    int n;
+    printf("enter the value of n\n");
+    scanf("%d",&n);
+    printf("%d", Add(n));
+    getch();
+
+}
+int Add(int a)
+{
+    if(a==0)
+    {
+    return 0;
+    }
+    else
+    {
+    return a+Add(a-1);
+    }
+}
