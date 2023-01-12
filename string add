@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    char fname[30],sname[30];
+    void displayfullname(char str1[],char str2[]);
+    printf("Enter your first name\n");
+    gets(fname);
+    printf("Enter your Surname \n");
+    gets(sname);
+    displayfullname(fname,sname);
+    getch();
+}
+
+void displayfullname(char str1[],char str2[])
+{
+    strcat(strcat(str1," "),str2);
+    printf("%s",str1);
+}
