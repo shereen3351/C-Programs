@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+#include<Ctype.h>
+void main()
+{
+float prin, in, time, si, ci;
+printf("Enter principle amount\n");
+scanf("%f",&prin);
+printf("Enter the interest rate\n");
+scanf("%f",&in);
+printf("Enter the time period in years\n");
+scanf("%f",&time);
+si=(prin*in*time)/100.0;
+in=12*in;
+ci=(prin*in*time)/100.0;
+printf("simple interest on the given principle will be:%f\n",si);
+printf("compound interest on the given principle will be:%f\n",ci);
+getch();
+}
