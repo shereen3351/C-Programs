@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<Ctype.h>
+void main()
+{
+ clrscr();
+float r, area, circum;
+printf("Enter the radius of the circle:\n");
+scanf("%f",&r);
+circum=(2*3.14*r);
+area=3.14*r*r;
+printf("Area of the circle is:%f\n",area);
+printf("Circumference of the circle is:%f\n",circum);
+ getche();
+}
